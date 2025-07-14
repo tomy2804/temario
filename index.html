@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malla Interactiva - Ing. Química UNGS</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 10px;
+      margin-top: 30px;
+    }
+    .materia {
+      padding: 10px;
+      background-color: #ddd;
+      border-radius: 8px;
+      text-align: center;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .materia.habilitada {
+      background-color: #a0d8f1;
+    }
+    .materia.aprobada {
+      background-color: #81c784;
+      color: white;
+    }
+    .materia.pendiente {
+      background-color: #ddd;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <h1>Malla Interactiva - Ingeniería Química (UNGS)</h1>
+  <div class="grid" id="malla"></div>
+
+  <script>
+    // ... (omitido por espacio)
+  </script>
+</body>
+</html>
